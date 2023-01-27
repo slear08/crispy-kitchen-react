@@ -1,6 +1,7 @@
 import React from 'react'
 import * as image from '../assets/images'
 import video from '../assets/video/production_ID_3769033.mp4'
+import SpecialMenuItem from '../components/Menu/SpecialMenuItem'
 import LastestUpdate from '../components/News/LastestUpdate'
 import NewsComponent from '../components/News/NewsComponents'
 
@@ -137,189 +138,61 @@ function Home() {
                             <h2 className="text-center mb-lg-5 mb-4">Special Menus</h2>
                         </div>
 
-                        <div className="col-lg-4 col-md-6 col-12">
-                            <div className="menu-thumb">
-                                <div className="menu-image-wrap">
-                                    <img src={image.breakfast1} className="img-fluid menu-image" alt=""/>
-
-                                    <span className="menu-tag bg-warning">Breakfast</span>
-                                </div>
-
-                                <div className="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 className="mb-0">Morning Fresh</h4>
-
-                                    <span className="price-tag bg-white shadow-lg ms-4"><small>$</small>12.50</span>
-
-                                    <div className="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 className="reviews-text mb-0 me-3">4.3/5</h6>
-
-                                        <div className="reviews-stars">
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p className="reviews-text mb-0 ms-4">102 Reviews</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 col-12">
-                            <div className="menu-thumb">
-                                <div className="menu-image-wrap">
-                                    <img src={image.lunch2} className="img-fluid menu-image" alt=""/>
-
-                                    <span className="menu-tag bg-warning">Lunch</span>
-                                </div>
-
-                                <div className="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 className="mb-0">Tooplate Soup</h4>
-
-                                    <span className="price-tag bg-white shadow-lg ms-4"><small>$</small>24.50</span>
-
-                                    <div className="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 className="reviews-text mb-0 me-3">3/5</h6>
-
-                                        <div className="reviews-stars">
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p className="reviews-text mb-0 ms-4">50 Reviews</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 col-12">
-                            <div className="menu-thumb">
-                                <div className="menu-image-wrap">
-                                    <img src={image.dinner3} className="img-fluid menu-image" alt=""/>
-
-                                    <span className="menu-tag bg-warning">Dinner</span>
-                                </div>
-
-                                <div className="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 className="mb-0">Premium Steak</h4>
-
-                                    <span className="price-tag bg-white shadow-lg ms-4"><small>$</small>45</span>
-
-                                    <del className="ms-4"><small>$</small>150</del>
-
-                                    <div className="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 className="reviews-text mb-0 me-3">3/5</h6>
-
-                                        <div className="reviews-stars">
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p className="reviews-text mb-0 ms-4">86 Reviews</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 col-12">
-                            <div className="menu-thumb">
-                                <div className="menu-image-wrap">
-                                    <img src={image.dinner2} className="img-fluid menu-image" alt=""/>
-
-                                    <span className="menu-tag bg-warning">Dinner</span>
-                                </div>
-
-                                <div className="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 className="mb-0">Seafood Set</h4>
-
-                                    <span className="price-tag bg-white shadow-lg ms-4"><small>$</small>86</span>
-
-                                    <del className="ms-4"><small>$</small>124</del>
-
-                                    <div className="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 className="reviews-text mb-0 me-3">3/5</h6>
-
-                                        <div className="reviews-stars">
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p className="reviews-text mb-0 ms-4">44 Reviews</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 col-12">
-                            <div className="menu-thumb">
-                                <div className="menu-image-wrap">
-                                    <img src={image.breakfast2} className="img-fluid menu-image" alt=""/>
-
-                                    <span className="menu-tag bg-warning">Breakfast</span>
-                                </div>
-
-                                <div className="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 className="mb-0">Burger Set</h4>
-
-                                    <span className="price-tag bg-white shadow-lg ms-4"><small>$</small>20.50</span>
-
-                                    <div className="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 className="reviews-text mb-0 me-3">4.3/5</h6>
-
-                                        <div className="reviews-stars">
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p className="reviews-text mb-0 ms-4">102 Reviews</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 col-12">
-                            <div className="menu-thumb">
-                                <div className="menu-image-wrap">
-                                    <img src={image.lunch1} className="img-fluid menu-image" alt=""/>
-
-                                    <span className="menu-tag bg-warning">Lunch</span>
-                                </div>
-
-                                <div className="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 className="mb-0">Healthy Soup</h4>
-
-                                    <span className="price-tag bg-white shadow-lg ms-4"><small>$</small>34.20</span>
-
-                                    <div className="d-flex flex-wrap align-items-center w-100 mt-2">
-                                        <h6 className="reviews-text mb-0 me-3">3/5</h6>
-
-                                        <div className="reviews-stars">
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star-fill reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                            <i className="bi-star reviews-icon"></i>
-                                        </div>
-
-                                        <p className="reviews-text mb-0 ms-4">64 Reviews</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <SpecialMenuItem 
+                            img = {image.breakfast1} 
+                            name = "Morning Fresh"
+                            price = "12.50"
+                            reviews = "102"
+                            ratings = "4.3/5" 
+                            tag = "Breakfast"
+                            discount = {null} 
+                        />
+                        <SpecialMenuItem 
+                            img = {image.lunch2} 
+                            name = "Tooplate Soup"
+                            price = "24.50"
+                            reviews = "50"
+                            ratings = "3/5" 
+                            tag = "Lunch"
+                            discount = {null} 
+                        />
+                        <SpecialMenuItem 
+                            img = {image.dinner3} 
+                            name = "Premium Steak"
+                            price = "45"
+                            reviews = "86"
+                            ratings = "3/5" 
+                            tag = "Dinner"
+                            discount = {150} 
+                        />
+                        <SpecialMenuItem 
+                            img = {image.dinner2} 
+                            name = "Seafood Set"
+                            price = "86"
+                            reviews = "44"
+                            ratings = "3/5" 
+                            tag = "Dinner"
+                            discount = {124} 
+                        />
+                        <SpecialMenuItem 
+                            img = {image.breakfast2} 
+                            name = "Seafood Set"
+                            price = "20.50"
+                            reviews = "102"
+                            ratings = "4.3/5" 
+                            tag = "Breakfast"
+                            discount = {null} 
+                        />
+                        <SpecialMenuItem 
+                            img = {image.lunch1} 
+                            name = "Healthy Soup"
+                            price = "34.20<"
+                            reviews = "64"
+                            ratings = "3/5" 
+                            tag = "Lunch"
+                            discount = {null} 
+                        />
+                        
 
                     </div>
                 </div>
