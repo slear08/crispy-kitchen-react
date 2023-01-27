@@ -2,6 +2,8 @@ import React from 'react'
 import * as image from '../assets/images'
 import video from '../assets/video/production_ID_3769033.mp4'
 import SpecialMenuItem from '../components/Menu/SpecialMenuItem'
+import LastestUpdate from '../components/News/LastestUpdate'
+import NewsComponent from '../components/News/NewsComponents'
 
 function Home() {
   return (
@@ -204,90 +206,39 @@ function Home() {
 
                         <h2 className="text-center mb-lg-5 mb-4">News &amp; Events</h2>
 
-                        <div className="col-lg-6 col-md-6 col-12">
-                            <div className="news-thumb mb-4">
-                                <a href="news-detail.html">
-                                    <img src={image.news6} className="img-fluid news-image" alt=""/>
-                                </a>
-                                
-                                <div className="news-text-info news-text-info-large">
-                                    <span className="category-tag bg-danger">Featured</span>
-
-                                    <h5 className="news-title mt-2">
-                                        <a href="news-detail.html" className="news-title-link">Healthy Lifestyle and happy living tips</a>
-                                    </h5>
-                                </div>
-                            </div> 
-                        </div>
-
-                        <div className="col-lg-6 col-md-6 col-12">
-                            <div className="news-thumb mb-4">
-                                <a href="news-detail.html">
-                                    <img src={image.news8} className="img-fluid news-image" alt=""/>
-                                </a>
-                                
-                                <div className="news-text-info news-text-info-large">
-                                    <span className="category-tag bg-danger">Featured</span>
-
-                                    <h5 className="news-title mt-2">
-                                        <a href="news-detail.html" className="news-title-link">How to make a healthy meal</a>
-                                    </h5>
-                                </div>
-                            </div> 
-                        </div>
+                        <LastestUpdate 
+                            image={image.news6} 
+                            tags="Featured" 
+                            newsLink="How to make a healthy diet?"
+                        />
+                        <LastestUpdate 
+                            image={image.news8} 
+                            tags="Featured" 
+                            newsLink="Happy Living and happy eating tips"
+                        />
 
     
-                        <div className="col-lg-4 col-md-4 col-12">
-                            <div className="news-thumb mb-lg-0 mb-lg-4 mb-0">
-                                <a href="news-detail.html">
-                                    <img src={image.news5} className="img-fluid news-image" alt=""/>
-                                </a>
-                                
-                                <div className="news-text-info">
-                                    <span className="category-tag me-3 bg-info">Promotions</span>
+                        <NewsComponent 
+                            image={image.news5} 
+                            tags="Promotions" 
+                            date="12 April 2022" 
+                            newsLink="Is Coconut good for your health?"
+                        />
 
-                                    <strong>8 April 2022</strong>
+                        <NewsComponent 
+                            image={image.news2} 
+                            tags="Career" 
+                            date="18 April 2022" 
+                            newsLink="How to run a sushi business?"
+                        />
 
-                                    <h5 className="news-title mt-2">
-                                        <a href="news-detail.html" className="news-title-link">Is Coconut good for you?</a>
-                                    </h5>
-                                </div>
-                            </div> 
-                        </div>
+                        <NewsComponent 
+                            image={image.news4} 
+                            tags="Meeting" 
+                            date="30 April 2022" 
+                            newsLink="Learning a fine dining experience"
+                        />
 
-                        <div className="col-lg-4 col-md-4 col-12">
-                            <div className="news-thumb mb-lg-0 mb-lg-4 mb-2">
-                                <a href="news-detail.html">
-                                    <img src={image.news1} className="img-fluid news-image" alt=""/>
-                                </a>
-                                
-                                <div className="news-text-info">
-                                    <span className="category-tag">News</span>
-
-                                    <h5 className="news-title mt-2">
-                                        <a href="news-detail.html" className="news-title-link">Salmon Steak Noodle</a>
-                                    </h5>
-                                </div>
-                            </div> 
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 col-12">
-                            <div className="news-thumb mb-4">
-                                <a href="news-detail.html">
-                                    <img src={image.news4} className="img-fluid news-image" alt="" />
-                                </a>
-                                
-                                <div className="news-text-info">
-                                    <span className="category-tag me-3 bg-info">Meeting</span>
-
-                                    <strong>30 April 2022</strong>
-
-                                    <h5 className="news-title mt-2">
-                                        <a href="news-detail.html" className="news-title-link">Making a healthy salad</a>
-                                    </h5>
-                                </div>
-                            </div> 
-                        </div>
                     </div>
                 </div>
             </section>
