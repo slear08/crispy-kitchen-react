@@ -2,7 +2,7 @@ import React,{ useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function Navbar() {
-    const [isActive, setIsActive] = useState(null);
+    const [isActive, setIsActive] = useState("/");
 
     function handleClick(link) {
         setIsActive(link);
