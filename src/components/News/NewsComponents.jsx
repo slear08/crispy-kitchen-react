@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function NewsComponents({ image , tags , date , newsLink }) {
   return (
@@ -14,7 +15,7 @@ function NewsComponents({ image , tags , date , newsLink }) {
                 <strong>{date}</strong>
 
                 <h5 className="news-title mt-2">
-                    <a href="news-detail.html" className="news-title-link">{newsLink}</a>
+                    <Link className="news-title-link" to="/news-details">{newsLink}</Link>
                 </h5>
             </div>
         </div> 
